@@ -1,0 +1,21 @@
+    body {
+        background: grey;
+        background-image: url(../img/coding.jpg);
+        text-align: center;
+    }
+    
+    h1 .linkhub {
+        list-style: none;
+        text-align: center;
+        /* outline: none; */
+    }
+    
+    .linkhub li {
+        padding: 5px;
+        text-decoration: none;
+        /* outline: none; */
+    }
+    
+    .linkhub li button {
+        outline: none;
+    }
