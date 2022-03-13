@@ -31,6 +31,14 @@
         text-align: center;
     }
     
+    #list a:visited {
+        color: #2d9484;
+    }
+    
+    #list a:hover {
+        color: #2d9484;
+    }
+    
     .col1,
     .col2 {
         display: flex;
