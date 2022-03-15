@@ -2,12 +2,15 @@ const q = (attribute) => document.querySelector(attribute);
 const popup = q('#popup');
 const links = document.querySelectorAll('a');
 
+//Button tag
+{/* <button class="moveToRight">></button>
+<button class="moveToLeft"><</button> */}
+
 function popupGenerator (link, githubLink, linkedinLink){
     popup.classList.add('hidden');
     popup.innerHTML = `
     <div class="closeBtn">X</div>
-    <div class="moveToRight">></div>
-    <div class="moveToLeft"><</div>
+
     <h1>${link.textContent}</h1>
     <h2>Scegli la piattaforma:</h2>
     <div class="groupBtn">
@@ -37,21 +40,24 @@ function popupGenerator (link, githubLink, linkedinLink){
 
 links.forEach((link, i, allLink) => {
 
-    let githubLink = link.getAttribute("data-git");
-    let linkedinLink = link.getAttribute("data-linkedin");
-    link.addEventListener('click', () => {
-    popupGenerator(link, githubLink, linkedinLink);
-    const leftBtn = q('.moveToLeft');
-    const rightBtn = q('.moveToRight');
-        leftBtn.addEventListener("click", () => {
-            githubLink = allLink[i-1].getAttribute("data-git");
-            linkedinLink = allLink[i-1].getAttribute("data-linkedin");
-            popupGenerator(allLink[i-1], githubLink, linkedinLink);
-        console.log("hai cliccato");
-        })
-
-        console.log(allLink[i-1]);
+    let githubLink = allLink[i].getAttribute("data-git");
+    let linkedinLink = allLink[i].getAttribute("data-linkedin");
+    
+    allLink[i].addEventListener('click', () => {
 
 
+    popupGenerator(allLink[i], githubLink, linkedinLink);
+
+    // const leftBtn = q('.moveToLeft');
+    // console.log(leftBtn.clicked);
+    // const rightBtn = q('.moveToRight');
+    
+    // leftBtn.addEventListener("click", () => {
+    //     let index = 10;
+    //     popupGenerator(allLink[index], allLink[index].getAttribute("data-git"), allLink[i].getAttribute("data-linkedin"));
+    //     index --;
+    // })
+        
+        
     })
 })
