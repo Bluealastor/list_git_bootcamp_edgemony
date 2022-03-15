@@ -3,14 +3,14 @@ const popup = q('#popup');
 const links = document.querySelectorAll('a');
 
 //Button tag
-{/* <button class="moveToRight">></button>
-<button class="moveToLeft"><</button> */}
 
 function popupGenerator (link, githubLink, linkedinLink){
     popup.classList.add('hidden');
     popup.innerHTML = `
     <img src="./assets/img/closeBtn.png" class="closeBtn">
-
+    <img src="./assets/img/rightArrow.png" class="moveToRight">
+    <img src="./assets/img/leftArrow.png" class="moveToLeft">
+    
     <h1>${link.textContent}</h1>
     <h2>Scegli la piattaforma:</h2>
     <div class="groupBtn">
