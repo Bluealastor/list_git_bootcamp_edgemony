@@ -9,7 +9,7 @@ const links = document.querySelectorAll('a');
 function popupGenerator (link, githubLink, linkedinLink){
     popup.classList.add('hidden');
     popup.innerHTML = `
-    <div class="closeBtn">X</div>
+    <img src="./assets/img/closeBtn.png" class="closeBtn">
 
     <h1>${link.textContent}</h1>
     <h2>Scegli la piattaforma:</h2>

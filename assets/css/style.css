@@ -78,16 +78,16 @@
 
 .hidden .closeBtn{
     position: absolute;
-    right: 30px;
+    right: 20px;
     top: 10px;
     color: #bfdfd9;
     font-weight: bolder;
-    background-color: black;
     padding: 0.5em;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    /* background-color: #40d6c0; */
     border: none;
-    border-radius: 1em;
+    border-radius: 2em;
     cursor: pointer;
 }
 
