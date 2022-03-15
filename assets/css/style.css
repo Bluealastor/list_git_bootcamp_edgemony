@@ -9,7 +9,7 @@
 .hidden {
     width: 85vw;
     height: 70vh;
-    background: #45ebd3;
+    background: #bfdfd9;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -29,6 +29,28 @@
 .hidden h1{
     font-size: 1rem;
 }
+.moveToRight, .moveToLeft{
+    color: #bfdfd9;;
+    font-size: 2em;
+    /* padding: 00; */
+    width: 35px;
+    border-radius: 2em;
+    background-color: #000;
+
+}
+
+.moveToRight{
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+}
+.moveToLeft{
+    position: absolute;
+    left: 0;
+    top:50%
+
+}
 .hidden .groupBtn {
     display: flex;
     flex-direction: column;
@@ -41,7 +63,7 @@
     width: 100%;
     background-color: #fff;
     border-radius: 0.7em;
-    border: 1px solid #45ebd3;
+    border: none;
     cursor: pointer;
 }
 .hidden .groupBtn .inactive button{
@@ -58,7 +80,7 @@
     position: absolute;
     right: 30px;
     top: 10px;
-    color: #45ebd3;
+    color: #bfdfd9;
     font-weight: bolder;
     background-color: black;
     padding: 0.5em;
